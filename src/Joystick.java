@@ -9,6 +9,7 @@ public class Joystick {
     private HidDevice devise;
     private byte[] devOut;
 
+
     Joystick(){
         devList = PureJavaHidApi.enumerateDevices();
         devOut=new byte[8];
@@ -48,14 +49,74 @@ public class Joystick {
 
     }
 
+    public boolean getStatusButton(String key){
+                switch (key){
+                    case "up":{
+                        return (devOut[1]==0) ?  true : false;
+                    }
+
+                    case "down":{
+                        return (devOut[1]==-1) ?  true : false;
+                    }
+
+                    case "left":{
+                        return (devOut[0]==0) ?  true : false;
+                    }
+
+                    case "right":{
+                        return (devOut[0]==-1) ?  true : false;
+                    }
+
+                    case "1":{
+                        return (devOut[5]==31) ?  true : false;
+                    }
+
+                    case "2":{
+                        return (devOut[5]==47) ?  true : false;
+                    }
+
+                    case "3":{
+                        return (devOut[5]==79) ?  true : false;
+                    }
+
+                    case "4":{
+                        return (devOut[5]==-113) ?  true : false;
+                    }
+
+                    case "LT":{
+                        return (devOut[6]==1) ?  true : false;
+                    }
+
+                    case "RT":{
+                        return (devOut[6]==2) ?  true : false;
+                    }
+
+                    case "LB":{
+                        return (devOut[6]==4) ?  true : false;
+                    }
+
+                    case "RB":{
+                        return (devOut[6]==8) ?  true : false;
+                    }
+
+                    case "9":{
+                        return (devOut[6]==16) ?  true : false;
+                    }
+
+                    case "10":{
+                        return (devOut[6]==32) ?  true : false;
+                    }
+                }
+        return false;
+    }
+
+
 
     void test(int num) {
         for (int j = 0; j < num; j++) {
             for (int i = 0; i < 8; i++)
                 System.out.printf("%02d ", devOut[i]);
                 System.out.println();
-
-
         }
     }
 

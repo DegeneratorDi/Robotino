@@ -2,10 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b58a2ec7-686b-4887-bb50-20f8f7894dfe" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/joystickKey" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Joystick.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Joystick.java" afterPath="$PROJECT_DIR$/src/Joystick.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Main.java" afterPath="$PROJECT_DIR$/src/Main.java" />
     </list>
     <ignored path="Robotino.iws" />
@@ -27,25 +26,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+            <state relative-caret-position="153">
+              <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Joystick.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Joystick.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Joystick.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="177">
-              <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+            <state relative-caret-position="398">
+              <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#900#1093#0" expanded="true" />
-                <element signature="e#1092#1093#0" expanded="true" />
+                <element signature="e#901#1094#0" expanded="true" />
+                <element signature="e#1093#1094#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -55,7 +54,7 @@
         <entry file="file://$PROJECT_DIR$/joystickKey">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="51">
-              <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
+              <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -64,8 +63,8 @@
       <file leaf-file-name="Robot.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Robot.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+            <state relative-caret-position="467">
+              <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -91,11 +90,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/Robot.java" />
         <option value="$PROJECT_DIR$/src/joystick.java" />
         <option value="$PROJECT_DIR$/joystickKey" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/src/Joystick.java" />
+        <option value="$PROJECT_DIR$/src/Robot.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -518,8 +517,8 @@
           <caret line="40" column="43" lean-forward="false" selection-start-line="40" selection-start-column="43" selection-end-line="40" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#900#1093#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#901#1094#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -742,36 +741,36 @@
     <entry file="file://$PROJECT_DIR$/joystickKey">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
-          <caret line="3" column="11" lean-forward="true" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Robot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
+          <caret line="3" column="11" lean-forward="false" selection-start-line="3" selection-start-column="11" selection-end-line="3" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Joystick.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="38" column="30" lean-forward="true" selection-start-line="38" selection-start-column="30" selection-end-line="38" selection-end-column="30" />
+        <state relative-caret-position="398">
+          <caret line="118" column="37" lean-forward="false" selection-start-line="118" selection-start-column="37" selection-end-line="118" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#900#1093#0" expanded="true" />
-            <element signature="e#1092#1093#0" expanded="true" />
+            <element signature="e#901#1094#0" expanded="true" />
+            <element signature="e#1093#1094#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Robot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="37" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="18" column="30" lean-forward="true" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
