@@ -10,16 +10,16 @@ public class Main {
         Robot robot = new Robot();
         Joystick joystick = new Joystick();
 
-        String hostname = "172.26.1.1";
-        //String hostname = "127.0.0.1";
+        //String hostname = "172.26.1.1";
+        String hostname = "127.0.0.1";
         robot.connect(hostname,true);
         float s =1f, rs=-1f;
        robot.move(s, s, s);
 
         joystick.getHidDevices();
-        joystick.setDevise(1);
+        joystick.setDevise(0);
         joystick.run();
-        joystick.test(1);
+        joystick.outDevise();
 
 
         MainFrame frame = new MainFrame(robot);

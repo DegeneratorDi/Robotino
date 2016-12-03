@@ -112,12 +112,13 @@ public class Joystick {
 
 
 
-    void test(int num) {
-        for (int j = 0; j < num; j++) {
-            for (int i = 0; i < 8; i++)
+    void outDevise() {
+        for (int i = 0; i < devOut.length; i++){
                 System.out.printf("%02d ", devOut[i]);
-                System.out.println();
+
         }
+
+        System.out.println();
     }
 
 

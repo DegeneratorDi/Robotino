@@ -4,6 +4,8 @@ import rec.robotino.api2.Camera;
 
 import java.awt.*;
 import java.util.Collection;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.concurrent.CopyOnWriteArrayList;
 
 
@@ -13,17 +15,17 @@ public class Robot {
     private final Com _com;
     private final OmniDrive _omniDrive;
 
-    protected final Collection<RobotListener> _listeners;
+    protected final Collection<CameraStream> _cameraStream;
 
    public Robot() {
        _camera = new MyCamera();
-       _com = new Com();
+       _com = new MyCom();
        _omniDrive = new OmniDrive();
 
        _omniDrive.setComId(_com.id());
         _camera.setComId(_com.id());
 
-       _listeners = new CopyOnWriteArrayList<RobotListener>();
+       _cameraStream = new CopyOnWriteArrayList<CameraStream>();
    }
 
    public void connect(String hostname, boolean block){
@@ -32,6 +34,27 @@ public class Robot {
        _com.setAddress(hostname);
        _com.connectToServer(block);
     }
+
+    class MyCom extends Com
+    {
+        Timer _timer;
+
+        public MyCom()
+        {
+            _timer = new Timer();
+            _timer.scheduleAtFixedRate(new OnTimeOut(), 0, 5);
+        }
+
+        class OnTimeOut extends TimerTask
+        {
+            public void run()
+            {
+                processEvents();
+            }
+        }
+
+    }
+
 
     public void move(float x, float y, float h) {
 
@@ -56,7 +79,7 @@ public class Robot {
         @Override
         public void imageReceivedEvent(Image img, long dataSize, long width, long height, long step)
         {
-            for(RobotListener listener : _listeners) {
+            for(CameraStream listener : _cameraStream) {
                 listener.onImageReceived(img);
             }
         }
@@ -65,9 +88,14 @@ public class Robot {
 
 
 
-    public void addListener(RobotListener listener)
+    public void addListener(CameraStream listener)
     {
-        _listeners.add( listener );
+        _cameraStream.add( listener );
+    }
+
+    public void removeListener(CameraStream listener)
+    {
+        _cameraStream.remove( listener );
     }
 
 
